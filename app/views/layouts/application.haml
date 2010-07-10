@@ -3,11 +3,30 @@
   %head
     %title
       My app
-    =stylesheet_link_tag :screen
-    =stylesheet_link_tag :site
-    =javascript_include_tag :defaults
+    =stylesheet_link_tag "screen"
+    =stylesheet_link_tag "site"
+    =javascript_include_tag :all
     = csrf_meta_tag
 
   %body
     %div{:class=>"container"}
-      = yield
+      %div{:class=>"span-24 hdr"}
+        .gallery all pics here
+        .navlinks
+          %ul
+            %li
+              %a{:href=>"#"}Home
+            %li
+              %a{:href=>"#"}Admissions
+            %li
+              %a{:href=>"#"}The Campus
+            %li
+              %a{:href=>"#"}Gallery
+            %li
+              %a{:href=>"#"}Contact Us
+      %div{:class=>"span-4 first leftsb"}
+        one sidebar
+      %div{:class=>"span-16 cnt"}
+        = yield
+      %div{:class=>"span-4 last rightsb"}
+        another sidebar
