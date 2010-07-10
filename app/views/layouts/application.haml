@@ -5,8 +5,12 @@
       My app
     =stylesheet_link_tag "screen"
     =stylesheet_link_tag "site"
-    =javascript_include_tag :all
-    = csrf_meta_tag
+    =javascript_include_tag "jquery"
+    =javascript_include_tag "rotate"
+    =javascript_include_tag "rails"
+    =javascript_include_tag "application"
+
+    =csrf_meta_tag
 
   %body
     %div{:class=>"container"}
@@ -26,6 +30,7 @@
               %a{:href=>"#"}Contact Us
       %div{:class=>"span-4 first leftsb"}
         one sidebar
+        =image_tag "rails.png", :id=>"railspic", :class=>"rimg"
       %div{:class=>"span-16 cnt"}
         = yield
       %div{:class=>"span-4 last rightsb"}
