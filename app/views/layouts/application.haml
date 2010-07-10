@@ -1,0 +1,13 @@
+!!!
+%html
+  %head
+    %title
+      My app
+    =stylesheet_link_tag :screen
+    =stylesheet_link_tag :site
+    =javascript_include_tag :defaults
+    = csrf_meta_tag
+
+  %body
+    %div{:class=>"container"}
+      = yield
