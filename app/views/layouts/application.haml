@@ -41,15 +41,16 @@
           %li
             %a{:href=>"#"}Landmark Events
           %li
-            %a{:href=>"#"}Some Reminiscences
+            %a{:href=>"#"}Reminiscences
 
         %p
           =image_tag "rails.png", :id=>"railspic", :class=>"rimg"
-      %div{:class=>"span-16 cnt"}
-        -if notice
-          %p{:class=>"notice"}
-            =notice
-        =yield
+      %div{:class=>"span-15 cnt"}
+        %div{:class=>"cntWrapper"}
+          -if notice
+            %p{:class=>"notice"}
+              =notice
+          =yield
       %div{:class=>"span-4 last rightsb"}
         %ul{:class=>"rightsbl"}
           %li
@@ -65,6 +66,6 @@
           %li
             %a{:href=>"#"}Calendar
           %li
-            %a{:href=>"#"}Contact Us
+            =link_to "Contact Us", "/contacts/cform"
           %li
             %a{:href=>"#"}Map

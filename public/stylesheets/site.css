@@ -32,6 +32,10 @@
 }
 .pagetitle { border-bottom: 1px solid #dddddd; }
 .cnt {
+  border-left: 1px solid #dddddd;
+  border-right: 1px solid #dddddd;
+  padding-left: 15px;
+  padding-right: 10px;
   margin-top: 30px;
   background: #ffffff;
   color: #333333;
@@ -42,5 +46,15 @@
   font-size: 140%;
   font-family: Georgia;
 }
+.leftsb { margin-top: 30px; }
 .leftsb .leftsbl { list-style: none; }
-.rightsb .rightsbl { list-style: none; }
+.leftsb .leftsbl li a { font-size: 120%; }
+.rightsb {
+  margin-top: 30px;
+  padding-left: 10px;
+}
+.rightsb .rightsbl {
+  text-align: right;
+  list-style: none;
+}
+.rightsb .rightsbl li a { font-size: 120%; }
