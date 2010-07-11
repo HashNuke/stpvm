@@ -1,7 +1,9 @@
 Chr::Application.routes.draw do |map|
+  resources :boards
+
   resources :galleries
 
-  root :to=>"galleries#index"
+  root :to=>'boards#home'
   
   # The priority is based upon order of creation:
   # first created -> highest priority.

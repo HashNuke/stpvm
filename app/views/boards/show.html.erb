@@ -1,0 +1,12 @@
+<h1 class="pagetitle">
+  <%= @board.name %>
+</h1>
+
+<div class="pagecnt">
+  <%= @board.content %>
+</div>
+
+<p>
+  <%= link_to 'Edit', edit_board_path(@board) %> |
+  <%= link_to 'Back', boards_path %>
+</p>
