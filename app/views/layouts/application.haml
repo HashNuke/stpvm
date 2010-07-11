@@ -29,12 +29,42 @@
             %li
               %a{:href=>"#"}Contact Us
       %div{:class=>"span-4 first leftsb"}
-        one sidebar
-        =image_tag "rails.png", :id=>"railspic", :class=>"rimg"
+        %ul{:class=>"leftsbl"}
+          %li
+            %a{:href=>"#"}About Us
+          %li
+            %a{:href=>"#"}Our Mission
+          %li
+            %a{:href=>"#"}Our Vision
+          %li
+            %a{:href=>"#"}The Campus
+          %li
+            %a{:href=>"#"}Landmark Events
+          %li
+            %a{:href=>"#"}Some Reminiscences
+
+        %p
+          =image_tag "rails.png", :id=>"railspic", :class=>"rimg"
       %div{:class=>"span-16 cnt"}
         -if notice
           %p{:class=>"notice"}
             =notice
         =yield
       %div{:class=>"span-4 last rightsb"}
-        another sidebar
+        %ul{:class=>"rightsbl"}
+          %li
+            %a{:href=>"#"}Curriculum
+          %li
+            %a{:href=>"#"}Extra-Curriculum
+          %li
+            %a{:href=>"#"}Rules & Regulations
+          %li
+            %a{:href=>"#"}Admission
+          %li
+            %a{:href=>"#"}Notice
+          %li
+            %a{:href=>"#"}Calendar
+          %li
+            %a{:href=>"#"}Contact Us
+          %li
+            %a{:href=>"#"}Map

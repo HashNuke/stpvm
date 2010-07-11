@@ -51,7 +51,7 @@ class BoardsController < ApplicationController
 
     respond_to do |format|
       if @board.save
-        format.html { redirect_to(@board, :notice => 'Board was successfully created.') }
+        format.html { redirect_to(@board, :notice => 'Page was successfully created.') }
         format.xml  { render :xml => @board, :status => :created, :location => @board }
       else
         format.html { render :action => "new" }
@@ -67,7 +67,7 @@ class BoardsController < ApplicationController
 
     respond_to do |format|
       if @board.update_attributes(params[:board])
-        format.html { redirect_to(@board, :notice => 'Board was successfully updated.') }
+        format.html { redirect_to(@board, :notice => 'Page was successfully updated.') }
         format.xml  { head :ok }
       else
         format.html { render :action => "edit" }

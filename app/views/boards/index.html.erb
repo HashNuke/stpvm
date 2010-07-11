@@ -1,4 +1,4 @@
-<h1>Listing Pages</h1>
+<h1 class="pagetitle">Listing Pages</h1>
 
 <table>
   <tr>
@@ -10,9 +10,13 @@
 <% @boards.each do |board| %>
   <tr>
     <td><%= link_to board.name,board %></td>
-    <td><%= link_to 'Edit', edit_board_path(board) %></td>
     <td>
-      <%- if board.id!=1 %>
+      <%- if board.id!=9 %>
+        <%= link_to 'Edit', edit_board_path(board) %>
+      <%- end %>
+    </td>
+    <td>
+      <%- if board.id!=1 and board.id!=9 %>
         <%= link_to 'Destroy', board, :confirm => 'Are you sure?', :method => :delete %>
       <%- end %>
     </td>
