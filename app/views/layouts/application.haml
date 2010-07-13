@@ -5,8 +5,11 @@
       My app
     =stylesheet_link_tag "screen"
     =stylesheet_link_tag "site"
+    =stylesheet_link_tag "facebox"
     =javascript_include_tag "jquery"
+    =javascript_include_tag "facebox"
     =javascript_include_tag "rotate"
+    =javascript_include_tag "corner"
     =javascript_include_tag "rails"
     =javascript_include_tag "application"
 
@@ -16,18 +19,7 @@
     %div{:class=>"container"}
       %div{:class=>"span-24 hdr"}
         .gallery all pics here
-        .navlinks
-          %ul
-            %li
-              %a{:href=>"#"}Home
-            %li
-              %a{:href=>"#"}Admissions
-            %li
-              %a{:href=>"#"}The Campus
-            %li
-              %a{:href=>"#"}Gallery
-            %li
-              %a{:href=>"#"}Contact Us
+
       %div{:class=>"span-4 first leftsb"}
         %ul{:class=>"leftsbl"}
           %li
@@ -40,7 +32,7 @@
             %a{:href=>"#"}The Campus
           %li
             %a{:href=>"#"}Landmark Events
-          %li
+          %li{:class=>"endli"}
             %a{:href=>"#"}Reminiscences
 
         %p
@@ -65,7 +57,16 @@
             %a{:href=>"#"}Notice
           %li
             %a{:href=>"#"}Calendar
-          %li
+          %li{:class=>"endli"}
             =link_to "Contact Us", "/contacts/cform"
-          %li
-            %a{:href=>"#"}Map
+
+        .sbbox
+          .boxcontent
+            %a{:href=>"#mapinfo", :rel=>"facebox"}
+              %img{:src=>"http://maps.google.com/maps/api/staticmap?zoom=10&center=12.980639,80.146208&markers=size=mid|color:red|12.980639,80.146208&size=140x140&sensor=false"}
+            .maplink
+              %a{:href=>"#mapinfo", :rel=>"facebox"}
+                view map
+            %div{:id=>"mapinfo"}
+              %img{:src=>"http://maps.google.com/maps/api/staticmap?zoom=14&center=12.980639,80.146208&markers=size=mid|color:red|12.980639,80.146208&size=500x340&sensor=false"}
+                

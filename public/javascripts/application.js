@@ -13,4 +13,10 @@ $(document).ready(function() {
                 $(this).rotateAnimation(-20);
           });
 
+          $(".rightsbl").corner();
+          $(".leftsbl").corner();
+          $(".sbbox").corner();
+
+          $('a[rel*=facebox]').facebox();
+
         });

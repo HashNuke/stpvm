@@ -32,8 +32,6 @@
 }
 .pagetitle { border-bottom: 1px solid #dddddd; }
 .cnt {
-  border-left: 1px solid #dddddd;
-  border-right: 1px solid #dddddd;
   padding-left: 15px;
   padding-right: 10px;
   margin-top: 30px;
@@ -47,14 +45,74 @@
   font-family: Georgia;
 }
 .leftsb { margin-top: 30px; }
-.leftsb .leftsbl { list-style: none; }
-.leftsb .leftsbl li a { font-size: 120%; }
+.leftsb .leftsbl {
+  border: 1px solid #cccccc;
+  background: #fdfdfd;
+  padding: 4px;
+  list-style: none;
+}
+.leftsb .leftsbl li {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 5px;
+  border-bottom: 1px solid #cccccc;
+}
+.leftsb .leftsbl li a {
+  color: #666666;
+  font-size: 120%;
+  text-decoration: none;
+  display: block;
+}
+.leftsb .leftsbl li:hover { background: #eeeeee; }
+.leftsb .leftsbl .endli { border-bottom: 0px; }
 .rightsb {
   margin-top: 30px;
   padding-left: 10px;
 }
 .rightsb .rightsbl {
+  border: 1px solid #cccccc;
   text-align: right;
+  background: #fdfdfd;
+  padding: 4px;
   list-style: none;
 }
-.rightsb .rightsbl li a { font-size: 120%; }
+.rightsb .rightsbl li {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 5px;
+  border-bottom: 1px solid #cccccc;
+}
+.rightsb .rightsbl li a {
+  color: #666666;
+  font-size: 120%;
+  text-decoration: none;
+  display: block;
+}
+.rightsb .rightsbl li:hover { background: #eeeeee; }
+.rightsb .rightsbl .endli { border-bottom: 0px; }
+.rightsb .sbbox {
+  margin-top: 30px;
+  border: 1px solid #cccccc;
+  padding: 4px;
+}
+.rightsb .sbbox .boxtitle {
+  font-weight: bold;
+  font-size: 110%;
+  text-align: center;
+  border-bottom: 1px solid #cccccc;
+}
+.rightsb .sbbox .boxcontent { margin-top: 10px; }
+#mapinfo { display: none; }
+.maplink {
+  text-align: center;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+.maplink a {
+  color: #eeeeee;
+  text-transform: uppercase;
+  font-size: 80%;
+  background: #666666;
+  padding: 3px;
+  text-decoration: none;
+}

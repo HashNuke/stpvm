@@ -58,8 +58,6 @@
 }
 
 .cnt{
-  border-left: 1px solid #dddddd;
-  border-right: 1px solid #dddddd;
   padding-left: 15px;
   padding-right: 10px;
   margin-top: 30px;
@@ -76,12 +74,26 @@
 .leftsb{
   margin-top: 30px;
   .leftsbl{
+    border: 1px solid #cccccc;
+    background: #fdfdfd;
+    padding: 4px;
     list-style: none;
     li{
+      padding-top: 10px;
+      padding-bottom: 10px;
+      padding-left: 5px;
+      border-bottom: 1px solid #cccccc;
       a{
+        color: #666666;
         font-size: 120%;
+        text-decoration: none;
+        display: block;
+      }
+      :hover{
+        background: #eeeeee;
       }
     }
+    .endli{border-bottom: 0px;}
   } 
 }
 
@@ -89,12 +101,59 @@
   margin-top: 30px;
   padding-left: 10px;
   .rightsbl{
+    border: 1px solid #cccccc;
     text-align: right;
+    background: #fdfdfd;
+    padding: 4px;
     list-style: none;
     li{
+      padding-top: 10px;
+      padding-bottom: 10px;
+      padding-right: 5px;
+      border-bottom: 1px solid #cccccc;
       a{
+        color: #666666;
         font-size: 120%;
+        text-decoration: none;
+        display: block;
+      }
+      :hover{
+        background: #eeeeee;
       }
     }
-  } 
+    .endli{border-bottom: 0px;}
+  }
+  
+  .sbbox{
+    margin-top: 30px;
+    border: 1px solid #cccccc;
+    padding: 4px;
+    .boxtitle{
+      font-weight: bold;
+      font-size: 110%;
+      text-align: center;
+      border-bottom: 1px solid #cccccc;
+    }
+    .boxcontent{
+        margin-top: 10px;
+    }
+  }
+}
+
+#mapinfo{
+  display: none;
+}
+
+.maplink{
+  text-align: center;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  a{
+    color: #eeeeee;
+    text-transform: uppercase;
+    font-size: 80%;
+    background: #666666;
+    padding: 3px;
+    text-decoration: none;
+  }
 }
