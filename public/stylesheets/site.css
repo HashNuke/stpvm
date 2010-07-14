@@ -31,6 +31,20 @@
   -webkit-border-radius-bottomright: 5px;
 }
 .pagetitle { border-bottom: 1px solid #dddddd; }
+.pagecnt {
+  text-align: justify;
+  text-justify: newspaper;
+}
+.pagecnt ol { margin-left: 30px; }
+.pagecnt ol li { padding-top: 10px; }
+.pagecnt .subtitle {
+  font-family: Arial;
+  font-weight: bold;
+  margin-top: 30px;
+  margin-bottom: 5px;
+  color: #999999;
+  text-align: center;
+}
 .cnt {
   padding-left: 15px;
   padding-right: 10px;
@@ -115,4 +129,23 @@
   background: #666666;
   padding: 3px;
   text-decoration: none;
+}
+p { margin-bottom: 10px; }
+p label {
+  text-transform: uppercase;
+  font-size: 60%;
+  font-family: Arial;
+}
+p .rememberlabel { font-weight: normal; }
+p input {
+  margin-top: 0em;
+  margin-bottom: 0em;
+}
+p input[type="password"] {
+  margin-top: 0em;
+  margin-bottom: 0em;
+}
+p input[type="text"] {
+  margin-top: 0em;
+  margin-bottom: 0em;
 }

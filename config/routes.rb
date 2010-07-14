@@ -2,15 +2,12 @@ Chr::Application.routes.draw do |map|
 
 
   match "contacts/cform"=>"contacts#cform"
-  resources :contacts
-  
-  
-  #devise_for :users
+  devise_for :users
   
   resources :boards
-
   resources :galleries
-
+  resources :contacts
+  
   root :to=>'boards#home'
   
   
